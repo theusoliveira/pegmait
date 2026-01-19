@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEGMA IT — Azure Cloud, DevOps, FinOps e Software sob medida</title>
+  <meta name="description" content="A PEGMA IT entrega soluções em Azure Cloud e desenvolvimento de software sob medida para PMEs, startups e setor público — com foco em segurança, escalabilidade e eficiência de custos." />
+
+  <meta property="og:title" content="PEGMA IT — Azure Cloud, DevOps, FinOps e Software sob medida" />
+  <meta property="og:description" content="Modernização em cloud, automação de pipelines, FinOps e observabilidade — com resultados reais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo_site.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="icon" type="image/png" href="images/logo_site.png" />
+</head>
+
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="#inicio" aria-label="PEGMA IT">
+        <img class="logo_square" src="./images/logo_site.png" alt="Logo PEGMA IT" />
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#cases">Cases</a>
+        <a href="#como-funciona">Como trabalhamos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="ainfraspend" class="btn btn-outline header-actions__hide-on-mobile">AInfraspend</a>
+        <a href="#contato" class="btn btn-primary header-actions__hide-on-mobile">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          Falar com especialista
+        </a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Sidebar -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+  <aside class="mobile-menu-sidebar" id="mobileMenuSidebar" aria-label="Menu mobile" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <img class="logo_square" src="./images/logo_site.png" alt="Logo PEGMA IT" />
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <a href="#inicio" class="mobile-menu-link">Início</a>
+      <a href="#servicos" class="mobile-menu-link">Serviços</a>
+      <a href="#cases" class="mobile-menu-link">Cases</a>
+      <a href="#como-funciona" class="mobile-menu-link">Como trabalhamos</a>
+      <a href="#contato" class="mobile-menu-link">Contato</a>
+      <a href="ainfraspend" class="btn btn-primary mobile-menu-cta">
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        Acessar AInfraspend
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Hero -->
+  <main id="inicio" class="hero" role="main">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+
+          <h1>Transforme seu negócio com soluções Azure Cloud de alta performance</h1>
+          <p>A PEGMA IT entrega soluções em Azure Cloud e desenvolvimento de software sob medida para PMEs, startups e setor público — com foco em inovação, segurança e escalabilidade</p>
+
+          <div class="hero-cta">
+            <a href="#contato" class="btn btn-primary">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              Solicitar orçamento
+            </a>
+            <a href="#cases" class="btn btn-secondary">
+              <i class="fa-regular fa-circle-play" aria-hidden="true"></i>
+              Ver resultados
+            </a>
+          </div>
+
+          <div class="hero-trust" aria-label="Tecnologias">
+            <span class="trust-pill">Azure</span>
+            <span class="trust-pill">Kubernetes</span>
+            <span class="trust-pill">Terraform</span>
+            <span class="trust-pill">Azure DevOps</span>
+            <span class="trust-pill">Keycloak / Auth0</span>
+            <span class="trust-pill">WAF</span>
+            <span class="trust-pill">Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Serviços para acelerar sua jornada em cloud</h2>
+        <p>Escolha um ponto de entrada — e evolua com um roadmap claro e execução orientada a resultados.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-route" aria-hidden="true"></i></div>
+          <h3>Assessment e Roadmap</h3>
+          <p>Diagnóstico de maturidade e plano de evolução em cloud (prioridades, riscos e quick wins).</p>
+          <div class="service-tags">
+            <span class="chip">Cloud Strategy</span>
+            <span class="chip">Governança</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+          <h3>DevOps as a Service</h3>
+          <p>Automação de pipelines, IaC e melhores práticas DevSecOps para entregas previsíveis.</p>
+          <div class="service-tags">
+            <span class="chip">CI/CD</span>
+            <span class="chip">IaC</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-piggy-bank" aria-hidden="true"></i></div>
+          <h3>FinOps e Otimização de Custos</h3>
+          <p>Redução de desperdícios, alocação correta de recursos e governança financeira em cloud.</p>
+          <div class="service-tags">
+            <span class="chip">Cost Mgmt</span>
+            <span class="chip">IA</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></div>
+          <h3>Observabilidade</h3>
+          <p>Monitoramento proativo, métricas e logs bem dimensionados para reduzir falhas e MTTR.</p>
+          <div class="service-tags">
+            <span class="chip">APM</span>
+            <span class="chip">SRE</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></div>
+          <h3>Migração e Operação em Azure</h3>
+          <p>Planejamento, migração e operação contínua — com segurança, performance e escala.</p>
+          <div class="service-tags">
+            <span class="chip">Azure</span>
+            <span class="chip">Containers</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-key" aria-hidden="true"></i></div>
+          <h3>Identidade e Acesso</h3>
+          <p>SSO/IAM com Keycloak/Auth0 e integrações para autenticação centralizada e segura.</p>
+          <div class="service-tags">
+            <span class="chip">SSO</span>
+            <span class="chip">IAM</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <h3>Segurança de Aplicações</h3>
+          <p>WAF, hardening e boas práticas para mitigar vulnerabilidades e ataques.</p>
+          <div class="service-tags">
+            <span class="chip">WAF</span>
+            <span class="chip">DevSecOps</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+          <h3>Software sob medida</h3>
+          <p>Aplicações, integrações e sistemas internos com foco em performance e escalabilidade.</p>
+          <div class="service-tags">
+            <span class="chip">Web</span>
+            <span class="chip">App</span>
+            <span class="chip">APIs</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <section id="cases" class="section section--alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Cases com resultados reais</h2>
+        <p>Projetos em que aplicamos automação, governança e engenharia para gerar impacto mensurável.</p>
+      </div>
+
+      <div class="cases-grid">
+        <article class="case-card">
+          <div class="case-top">
+            <span class="case-icon">🚀</span>
+            <div class="case-chips">
+              <span class="chip">FinOps</span>
+              <span class="chip">Autoscaling</span>
+            </div>
+          </div>
+          <h3>44% de redução de custos em cloud</h3>
+          <p>Infra que ultrapassava R$ 1 milhão por trimestre no setor logístico — reduzimos sem impactar aplicações críticas.</p>
+          <ul class="case-list">
+            <li>Ajustes de autoscaling e right-sizing</li>
+            <li>Otimização de ingestão e retenção de logs</li>
+            <li>Governança de custos com visibilidade por serviço</li>
+          </ul>
+          <div class="case-highlight">✓ Resultado: 44% menos custos mantendo alta disponibilidade</div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-top">
+            <span class="case-icon">⚙️</span>
+            <div class="case-chips">
+              <span class="chip">Azure DevOps</span>
+              <span class="chip">CI/CD</span>
+            </div>
+          </div>
+          <h3>Entregas mais previsíveis com Azure DevOps</h3>
+          <p>Processos manuais e ferramentas desconectadas atrasavam deploys e dificultavam rastreabilidade.</p>
+          <ul class="case-list">
+            <li>Pipelines automatizados de build e release</li>
+            <li>Políticas de versionamento e PR checks</li>
+            <li>Dashboards de visibilidade end-to-end</li>
+          </ul>
+          <div class="case-highlight">✓ Resultado: menos incidentes e mais autonomia do time</div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-top">
+            <span class="case-icon">💡</span>
+            <div class="case-chips">
+              <span class="chip">SAST</span>
+              <span class="chip">SonarCloud</span>
+            </div>
+          </div>
+          <h3>Qualidade e segurança com SonarCloud</h3>
+          <p>Ambiente multi-time com padrões variáveis — centralizamos governança de qualidade e segurança.</p>
+          <ul class="case-list">
+            <li>Integração ao CI/CD com gates por severidade</li>
+            <li>Painéis de monitoramento e indicadores</li>
+            <li>Padronização de boas práticas entre squads</li>
+          </ul>
+          <div class="case-highlight">✓ Resultado: desenvolvimento mais padronizado e sustentável</div>
+        </article>
+      </div>
+
+      <div class="cases-cta">
+        <a class="btn btn-primary" href="#contato">
+          <i class="fa-solid fa-message" aria-hidden="true"></i>
+          Quero conversar sobre meu cenário
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como trabalhamos -->
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Como trabalhamos</h2>
+        <p>Um fluxo simples, com entregas claras e acompanhamento contínuo.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <div class="process-step__num">1</div>
+          <h3>Diagnóstico</h3>
+          <p>Entendemos contexto, sistemas, dores e restrições. Saída: mapa de riscos + quick wins.</p>
+        </article>
+        <article class="process-step">
+          <div class="process-step__num">2</div>
+          <h3>Plano e priorização</h3>
+          <p>Roadmap por impacto (custos, confiabilidade e velocidade), com critérios e metas.</p>
+        </article>
+        <article class="process-step">
+          <div class="process-step__num">3</div>
+          <h3>Implementação</h3>
+          <p>Execução com boas práticas (IaC, CI/CD, segurança) e entregas curtas e verificáveis.</p>
+        </article>
+        <article class="process-step">
+          <div class="process-step__num">4</div>
+          <h3>Operação e evolução</h3>
+          <p>Observabilidade, otimizações e governança contínua para manter resultados no longo prazo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="sobre" class="section section--alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Por que escolher a PEGMA IT?</h2>
+        <p>Especialistas em Azure, automação e engenharia aplicada ao seu negócio.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+          <div class="benefit-content">
+            <h4>Especialistas em Microsoft Azure</h4>
+            <p>Experiência prática em ambientes críticos e jornadas de modernização.</p>
+          </div>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+          <div class="benefit-content">
+            <h4>Automação e IA na prática</h4>
+            <p>Menos operação manual, mais padronização e decisões baseadas em dados.</p>
+          </div>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+          <div class="benefit-content">
+            <h4>Governança e previsibilidade</h4>
+            <p>Processos, métricas e controles para crescer com segurança.</p>
+          </div>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+          <div class="benefit-content">
+            <h4>Custo-benefício</h4>
+            <p>Investimento atrativo com alto retorno — foco em impacto, não em horas.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="cta-section">
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-copy">
+          <h2>Pronto para dar o próximo passo?</h2>
+          <p>Conte um pouco do seu cenário. Respondemos com um caminho claro e próximos passos objetivos.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card__icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+              <div>
+                <div class="contact-card__title">E-mail</div>
+                <a class="contact-card__link" href="mailto:contato@pegmait.com.br">contato@pegmait.com.br</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__icon"><i class="fa-solid fa-shield" aria-hidden="true"></i></div>
+              <div>
+                <div class="contact-card__title">Segurança</div>
+                <div class="contact-card__text">Compartilhe apenas o necessário. Dados sensíveis podem ser enviados por canal seguro.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-endpoint="">
+          <div class="success-message" id="successMessage">
+            Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </div>
+
+          <div class="form-group">
+            <label for="name">Nome *</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+            <div class="error-message" id="nameError">Por favor, informe seu nome.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <div class="error-message" id="emailError">Por favor, informe um e-mail válido.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Empresa</label>
+            <input type="text" id="company" name="company" autocomplete="organization" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Como podemos ajudar? *</label>
+            <textarea id="message" name="message" placeholder="Cloud, DevOps, FinOps, observabilidade, software sob medida…" required></textarea>
+            <div class="error-message" id="messageError">Por favor, descreva suas necessidades.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            Enviar
+          </button>
+
+          <p class="form-hint">Dica: se você ainda não tem um endpoint, o formulário abre seu e-mail automaticamente.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>PEGMA IT</h3>
+          <p>Transformando empresas através da computação em nuvem com soluções inovadoras, seguras e escaláveis.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links</h3>
+          <p><a href="ainfraspend">AInfraspend</a></p>
+          <p><a href="termos-de-uso">Termos de uso</a></p>
+          <p><a href="politica-de-privacidade">Política de privacidade</a></p>
+          <p><a href="disclaimer">Aviso legal</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p><a href="mailto:contato@pegmait.com.br">contato@pegmait.com.br</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PEGMA IT. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

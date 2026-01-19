@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEGMA IT - Termos de Uso e Condições — Ainfraspend</title>
+    <meta name="description" content="Termos de Uso e Condições do Ainfraspend, ferramenta de análise de custos em nuvem da PEGMA IT.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilo simples para a página de Termos -->
+    <style>
+      body {
+        background: #f5f5f5;
+        color: #333;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .terms-page {
+        padding: 100px 16px 60px;
+      }
+
+      .terms-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        padding: 24px 24px 32px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      }
+
+      .terms-header {
+        margin-bottom: 24px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 16px;
+      }
+
+      .terms-header h1 {
+        font-size: 1.8rem;
+        margin: 0 0 8px;
+      }
+
+      .terms-header p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .terms-content h2 {
+        font-size: 1.2rem;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+
+      .terms-content h3 {
+        font-size: 1rem;
+        margin-top: 16px;
+        margin-bottom: 6px;
+      }
+
+      .terms-content p {
+        margin: 4px 0 10px;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+
+      .terms-content ul {
+        margin: 4px 0 10px 18px;
+        padding-left: 0;
+        font-size: 0.95rem;
+      }
+
+      .terms-content li {
+        margin-bottom: 4px;
+      }
+
+      @media (max-width: 600px) {
+        .terms-container {
+          padding: 20px 16px 24px;
+        }
+
+        .terms-header h1 {
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <img class="logo_square" src="../images/logo_site.png" />
+        <nav class="nav">
+          <a href="../ainfraspend">Voltar ao Início</a>
+        </nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu-sidebar" id="mobileMenuSidebar">
+      <div class="mobile-menu-header">
+        <img class="logo_square" src="../images/logo_site.png" />
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="../ainfraspend" class="mobile-menu-link">Voltar ao Início</a>
+      </nav>
+    </div>
+
+    <!-- Conteúdo: Termos de Uso e Condições -->
+    <main class="terms-page">
+      <div class="terms-container">
+        <header class="terms-header">
+          <h1>Termos de Uso e Condições — Ainfraspend</h1>
+          <p><strong>Última atualização:</strong> 27 de novembro de 2025.</p>
+        </header>
+
+        <section class="terms-content">
+          <p>
+            Bem-vindo ao <strong>Ainfraspend</strong>. Ao acessar ou utilizar o Ainfraspend, você
+            concorda integralmente com estes Termos. Caso não concorde, não utilize o Serviço.
+          </p>
+
+          <h2>1. Definições</h2>
+          <p><strong>Usuário:</strong> pessoa física ou jurídica que acessa ou utiliza o serviço.</p>
+          <p><strong>Service Principal:</strong> credencial fornecida pelo Usuário que permite acesso de leitura a dados de faturamento/consumo de sua assinatura Azure.</p>
+          <p><strong>Serviço:</strong> funcionalidades que incluem leitura de dados de billing da Azure, consolidação de informações, análise por IA e envio de recomendações por e-mail.</p>
+
+          <h2>2. Natureza do Serviço</h2>
+          <p>
+            O Ainfraspend consolida dados de custos e consumo de nuvem (inicialmente Azure) a partir de um
+            <strong>Service Principal de leitura</strong> fornecido pelo Usuário.
+          </p>
+          <p>O Serviço realiza:</p>
+          <ul>
+            <li>leitura dos dados de cobrança da assinatura,</li>
+            <li>análise automatizada por IA,</li>
+            <li>envio de relatórios e recomendações de otimização por e-mail.</li>
+          </ul>
+          <p>
+            O Ainfraspend <strong>não executa operações na assinatura Azure</strong>,
+            <strong>não altera recursos</strong>, <strong>não provisiona</strong>,
+            <strong>não configura</strong> e <strong>não executa mudanças automáticas</strong>.
+            Trata-se exclusivamente de uma ferramenta de visualização e análise.
+          </p>
+
+          <h2>3. Credenciais do Usuário (Service Principal)</h2>
+
+          <h3>3.1. Autorização concedida</h3>
+          <p>Ao fornecer um Service Principal, o Usuário concede ao Ainfraspend permissão para:</p>
+          <ul>
+            <li>acessar <strong>exclusivamente dados de leitura</strong> referentes a billing e consumo,</li>
+            <li>processar esses dados para gerar análises e recomendações.</li>
+          </ul>
+
+          <h3>3.2. Responsabilidade pelas permissões</h3>
+          <p>O Usuário é total e exclusivamente responsável por:</p>
+          <ul>
+            <li>criar e configurar o Service Principal,</li>
+            <li>limitar suas permissões a leitura de custos,</li>
+            <li>garantir que a credencial não possua privilégios excessivos.</li>
+          </ul>
+          <p>O Ainfraspend não se responsabiliza por configurações incorretas realizadas pelo Usuário.</p>
+
+          <h3>3.3. Armazenamento e segurança</h3>
+          <p>A Empresa se compromete a:</p>
+          <ul>
+            <li>armazenar o Service Principal de forma segura,</li>
+            <li>utilizá-lo apenas para os fins descritos nos Termos,</li>
+            <li>nunca compartilhá-lo com terceiros,</li>
+            <li>excluir ou revogar o acesso caso o Usuário exclua sua conta.</li>
+          </ul>
+
+          <h2>4. Recomendações de IA</h2>
+          <p>O Serviço pode enviar recomendações automatizadas de otimização de custos via e-mail. O Usuário reconhece que:</p>
+          <ul>
+            <li>tais recomendações são <strong>estimativas</strong>,</li>
+            <li>podem conter imprecisões,</li>
+            <li>não substituem análise de profissionais qualificados,</li>
+            <li>decisões tomadas com base nessas recomendações são de responsabilidade exclusiva do Usuário.</li>
+          </ul>
+          <p>O Ainfraspend não garante precisão, exatidão ou adequação das sugestões ao ambiente do Usuário.</p>
+
+          <h2>5. Gratuidade e Modificações Futuras</h2>
+          <p>O Serviço é atualmente <strong>gratuito</strong>, com possível introdução de planos pagos no futuro.</p>
+
+          <h2>6. Integrações com Provedores Externos</h2>
+          <p>O Serviço depende de APIs e serviços de terceiros, como:</p>
+          <ul>
+            <li>Microsoft Azure,</li>
+            <li>API de IA (OpenAI ou equivalente),</li>
+            <li>provedores de e-mail.</li>
+          </ul>
+          <p>A Empresa não é responsável por:</p>
+          <ul>
+            <li>indisponibilidade ou falhas nesses serviços,</li>
+            <li>mudanças nas APIs,</li>
+            <li>erros nos dados fornecidos pelo provedor cloud.</li>
+          </ul>
+
+          <h2>7. Limitações de Responsabilidade</h2>
+          <p>Na máxima extensão permitida pela legislação, a Empresa não se responsabiliza por:</p>
+          <ul>
+            <li>decisões tomadas a partir das recomendações enviadas,</li>
+            <li>perdas financeiras, operacionais ou estratégicas,</li>
+            <li>falhas na configuração do Service Principal pelo Usuário,</li>
+            <li>vazamento de credenciais provocado pelo Usuário,</li>
+            <li>falhas de terceiros ou indisponibilidade da Azure,</li>
+            <li>interpretações incorretas de relatórios ou sugestões.</li>
+          </ul>
+          <p>O Serviço é fornecido “<strong>no estado em que se encontra</strong>” e “<strong>conforme disponível</strong>”.</p>
+
+          <h2>8. Obrigações do Usuário</h2>
+          <p>O Usuário deve:</p>
+          <ul>
+            <li>utilizar o Serviço somente dentro da lei,</li>
+            <li>não tentar comprometer a segurança da Plataforma,</li>
+            <li>revogar o Service Principal caso suspeite de comprometimento,</li>
+            <li>manter suas credenciais em segurança.</li>
+          </ul>
+
+          <h2>9. Privacidade e Dados</h2>
+          <p>O tratamento de dados será realizado conforme LGPD e, quando aplicável, GDPR, incluindo:</p>
+          <ul>
+            <li>dados cadastrais,</li>
+            <li>dados de uso do Serviço,</li>
+            <li>dados obtidos via Service Principal, exclusivamente para fins de análise.</li>
+          </ul>
+          <p>Os dados <strong>não serão compartilhados com terceiros</strong> exceto:</p>
+          <ul>
+            <li>provedores essenciais ao funcionamento (ex.: envio de e-mail, IA),</li>
+            <li>quando exigido por lei.</li>
+          </ul>
+
+          <h2>10. Suspensão e Encerramento</h2>
+          <p>
+            A Empresa pode suspender ou encerrar contas que representem risco ou violem os Termos.
+            O Usuário pode excluir sua conta a qualquer momento.
+          </p>
+
+          <h2>11. Alterações nos Termos</h2>
+          <p>
+            Os Termos podem ser atualizados periodicamente.
+            O uso contínuo do Serviço significa concordância com as versões atualizadas.
+          </p>
+
+          <h2>12. Legislação Aplicável</h2>
+          <p>
+            As leis brasileiras regem estes Termos.
+            O foro eleito é o da comarca da Empresa, salvo disposição legal diversa.
+          </p>
+
+          <h2>13. Contato</h2>
+          <p>Para dúvidas ou solicitações:</p>
+          <p><strong>E-mail:</strong> contato@pegmait.com.br</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PEGMA IT</h3>
+            <p>Transformando empresas através da computação em nuvem com soluções inovadoras, seguras e escaláveis.</p>
+          </div>
+          <div class="footer-section">
+            <!-- <h3></h3>
+            <p><a href="#servicos">Termos de Uso e Condições</a></p>
+            <p><a href="#servicos">Política de Privacidade</a></p> -->
+          </div>
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <p>E-mail: contato@pegmait.com.br</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 PEGMA IT. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

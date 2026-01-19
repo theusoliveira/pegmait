@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEGMA IT - Política de Privacidade — Ainfraspend</title>
+    <meta name="description" content="Política de Privacidade do Ainfraspend, ferramenta de análise de custos em nuvem da PEGMA IT.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilo simples para a página de Política de Privacidade -->
+    <style>
+      body {
+        background: #f5f5f5;
+        color: #333;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .terms-page {
+        padding: 100px 16px 60px;
+      }
+
+      .terms-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        padding: 24px 24px 32px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      }
+
+      .terms-header {
+        margin-bottom: 24px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 16px;
+      }
+
+      .terms-header h1 {
+        font-size: 1.8rem;
+        margin: 0 0 8px;
+      }
+
+      .terms-header p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .terms-content h2 {
+        font-size: 1.2rem;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+
+      .terms-content h3 {
+        font-size: 1rem;
+        margin-top: 16px;
+        margin-bottom: 6px;
+      }
+
+      .terms-content p {
+        margin: 4px 0 10px;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+
+      .terms-content ul {
+        margin: 4px 0 10px 18px;
+        padding-left: 0;
+        font-size: 0.95rem;
+      }
+
+      .terms-content li {
+        margin-bottom: 4px;
+      }
+
+      @media (max-width: 600px) {
+        .terms-container {
+          padding: 20px 16px 24px;
+        }
+
+        .terms-header h1 {
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <img class="logo_square" src="../images/logo_site.png" />
+        <nav class="nav">
+          <a href="../ainfraspend">Voltar ao Início</a>
+        </nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu-sidebar" id="mobileMenuSidebar">
+      <div class="mobile-menu-header">
+        <img class="logo_square" src="../images/logo_site.png" />
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="../ainfraspend" class="mobile-menu-link">Voltar ao Início</a>
+      </nav>
+    </div>
+
+    <!-- Conteúdo: Política de Privacidade -->
+    <main class="terms-page">
+      <div class="terms-container">
+        <header class="terms-header">
+          <h1>Política de Privacidade — Ainfraspend</h1>
+          <p><strong>Última atualização:</strong> 27 de novembro de 2025.</p>
+        </header>
+
+        <section class="terms-content">
+          <p>
+            A presente Política descreve como o <strong>Ainfraspend</strong> coleta, utiliza, armazena e protege
+            os dados pessoais e corporativos fornecidos pelos usuários. Ao utilizar o Serviço, você
+            concorda com esta Política.
+          </p>
+
+          <h2>1. Dados coletados</h2>
+
+          <h3>1.1. Dados cadastrais</h3>
+          <p>Coletamos informações necessárias para criação da conta:</p>
+          <ul>
+            <li>nome,</li>
+            <li>e-mail.</li>
+          </ul>
+
+          <h3>1.2. Credenciais da Azure</h3>
+          <p>Quando o Usuário cadastra o Service Principal, coletamos:</p>
+          <ul>
+            <li>client id,</li>
+            <li>client secret,</li>
+            <li>tenant id,</li>
+            <li>subscription id,</li>
+            <li>permissões de leitura de billing associadas.</li>
+          </ul>
+          <p>Essas credenciais são utilizadas <strong>exclusivamente</strong> para leitura de dados de consumo e faturamento da Azure.</p>
+
+          <h3>1.3. Dados de Billing</h3>
+          <p>O Serviço acessa:</p>
+          <ul>
+            <li>dados de custo,</li>
+            <li>consumo detalhado,</li>
+            <li>tipos de recursos provisionados,</li>
+            <li>informações de região e utilização.</li>
+          </ul>
+          <p>Nenhum dado de configuração, infraestrutura, deploy ou código é coletado.</p>
+
+          <h3>1.4. Dados de uso da Plataforma</h3>
+          <p>Podemos registrar:</p>
+          <ul>
+            <li>logs de acesso,</li>
+            <li>preferências,</li>
+            <li>histórico de análises geradas.</li>
+          </ul>
+
+          <h2>2. Finalidade do tratamento</h2>
+          <p>Os dados são utilizados para:</p>
+          <ul>
+            <li>processar custos e consumo da assinatura Azure,</li>
+            <li>gerar análises e recomendações de otimização por IA,</li>
+            <li>enviar relatórios por e-mail,</li>
+            <li>melhorar a precisão do serviço,</li>
+            <li>cumprir obrigações legais.</li>
+          </ul>
+
+          <h2>3. Compartilhamento de dados</h2>
+          <p>
+            Os dados <strong>não são vendidos</strong> nem compartilhados com terceiros, exceto
+            quando necessário para funcionamento:
+          </p>
+
+          <h3>Prestadores essenciais:</h3>
+          <ul>
+            <li>provedor de e-mail,</li>
+            <li>provedor de IA (ex.: OpenAI ou equivalente),</li>
+            <li>infraestrutura de hospedagem.</li>
+          </ul>
+
+          <h3>Obrigação legal:</h3>
+          <p>Dados podem ser compartilhados se houver ordem judicial ou exigência legal.</p>
+
+          <h2>4. Segurança dos dados</h2>
+          <p>Adotamos medidas de proteção para evitar acesso não autorizado, tais como:</p>
+          <ul>
+            <li>criptografia em repouso e em trânsito,</li>
+            <li>segregação de dados,</li>
+            <li>tokens rotativos quando aplicável,</li>
+            <li>armazenamento seguro para credenciais,</li>
+            <li>restrição de acesso interno.</li>
+          </ul>
+
+          <h2>5. Armazenamento e retenção</h2>
+          <p>Mantemos os dados enquanto a conta estiver ativa. O Usuário pode solicitar:</p>
+          <ul>
+            <li>exclusão da conta,</li>
+            <li>remoção completa dos dados.</li>
+          </ul>
+          <p>Após a exclusão, as credenciais são destruídas de forma permanente.</p>
+
+          <h2>6. Direitos do Usuário (LGPD)</h2>
+          <p>Você pode:</p>
+          <ul>
+            <li>acessar seus dados,</li>
+            <li>corrigir dados incorretos,</li>
+            <li>solicitar exclusão,</li>
+            <li>revogar consentimento.</li>
+          </ul>
+          <p>Solicitações podem ser feitas via e-mail oficial.</p>
+
+          <h2>8. Transferência internacional</h2>
+          <p>
+            Como provedores como OpenAI e Azure podem operar fora do Brasil, alguns dados podem ser
+            armazenados ou processados no exterior, sempre em conformidade com a LGPD e padrões
+            internacionais de segurança.
+          </p>
+
+          <h2>9. Alterações na Política</h2>
+          <p>
+            Podemos atualizar esta Política. A versão mais recente estará sempre disponível na Plataforma.
+          </p>
+
+          <h2>10. Contato</h2>
+          <p>Para dúvidas ou solicitações relacionadas à privacidade:</p>
+          <p><strong>E-mail:</strong> contato@pegmait.com.br</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PEGMA IT</h3>
+            <p>Transformando empresas através da computação em nuvem com soluções inovadoras, seguras e escaláveis.</p>
+          </div>
+          <div class="footer-section">
+            <!-- <h3></h3>
+            <p><a href="#servicos">Termos de Uso e Condições</a></p>
+            <p><a href="#servicos">Política de Privacidade</a></p> -->
+          </div>
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <p>E-mail: contato@pegmait.com.br</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 PEGMA IT. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
