@@ -109,29 +109,6 @@
   window.addEventListener('resize', () => {
     if (window.innerWidth > 920) closeMobileMenu();
   });
-
-  // -------------------------
-  // Animações de entrada (reveal)
-  // -------------------------
-  const revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
-  const prefersReduced = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
-
-  if (!prefersReduced && 'IntersectionObserver' in window && revealEls.length) {
-    const revealIO = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-revealed');
-          revealIO.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.15 }
-    );
-    revealEls.forEach((el) => revealIO.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add('is-revealed'));
-  }
-
   // -------------------------
   // Form helpers
   // -------------------------
@@ -280,17 +257,6 @@
     form.querySelectorAll('input').forEach((field) => {
       field.addEventListener('input', () => clearError(field));
       field.addEventListener('change', () => clearError(field));
-    });
-
-    const toggleButtons = form.querySelectorAll('[data-toggle-secret]');
-    toggleButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const id = btn.getAttribute('data-toggle-secret');
-        const input = id ? document.getElementById(id) : null;
-        if (!input) return;
-        input.type = input.type === 'password' ? 'text' : 'password';
-        btn.textContent = input.type === 'password' ? 'Mostrar' : 'Ocultar';
-      });
     });
 
     form.addEventListener('submit', async (e) => {
